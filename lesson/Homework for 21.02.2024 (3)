@@ -1,0 +1,6 @@
+print("введите число")
+z = int(input())
+if z % 2 == 0:
+    print("четное")
+else:
+    print("нечетное")
