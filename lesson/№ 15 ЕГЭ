@@ -38,3 +38,12 @@ for a in range(1000):
     if all(f(x, y, a) == 0 for x in range(400) for y in range(400)):
         k+=1
 print(k)
+------------------------
+ЗАДАНИЕ 15 ИЗ 2 - ГО ВАРИКА ПО СБОРНИКУ 
+def f(x, a):
+    return (x % 14 == 0) <= (not(x % 4 == 0) or (x + a >= 200))
+for a in range(1, 10000):
+    if all(f(x, a) for x in range(1, 10000)):
+        print (a)
+        break
+------------------------
