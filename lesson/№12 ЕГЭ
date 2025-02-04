@@ -105,3 +105,49 @@ while '1111' in s or '8888' in s:
 
 print(s)
 -------------
+Тип 12 № 9265
+------------
+s = '8' * 68
+while '222' in s or '888' in s:
+    if '222' in s:
+        s = s.replace ('222', '8', 1)
+    else:
+        s = s.replace ('888', '2', 1)
+
+print(s)
+-----------
+Тип 12 №9764
+-----------
+s = '9' * 127
+while '333' in s or '999' in s:
+    if '333' in s:
+        s = s.replace ('333', '9', 1)
+    else:
+        s = s.replace ('999', '3', 1)
+
+print(s)
+-----------
+Тип 12 №9764
+-----------
+s = '9' * 127
+while '333' in s or '999' in s:
+    if '333' in s:
+        s = s.replace ('333', '9', 1)
+    else:
+        s = s.replace ('999', '3', 1)
+
+print(s)
+----------
+Тип 12 №10290
+----------
+s = '1' + '8' * 80
+while '18' in s or '288' in s or '3888' in s:
+    if '18' in s:
+        s = s.replace ('18', '2', 1)
+    if '288' in s:
+        s = s.replace ('288', '3',1)
+    else:
+        s = s.replace ('3888', '1', 1)
+
+print(s)
+----------
