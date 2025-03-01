@@ -68,3 +68,16 @@ for n in range (100, 1, -1):  #Цикл перебирает числа nnn от
     if r <= 102:  
         print(r)  
         break #Если r меньше либо равно 102, число r выводится, и выполнение цикла прекращается благодаря `break`.
+
+5.
+Тип 5 № 7982
+
+for n in range (100, 10000):
+    a = int(str(n)[0]) + int(str(n)[1])
+    b = int(str(n)[1]) + int(str(n)[2])
+    mx = max (a, b)
+    mn = min (a, b)
+    r = str(mx) + str(mn)
+    if r == '159':
+        print(n)
+
