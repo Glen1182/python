@@ -175,4 +175,19 @@ for n in range (4, 20000):
         if sum(map(int,s)) == 142:
             print(n)
             break
----------
+--------------
+Вариант 7 из книжки 
+--------------
+for n in range(4, 1000):
+    s = '4' + '1' * n
+    while '31' in s or '411' in s or '1111' in s:
+        if '31' in s:
+            s = s.replace ('31', '1', 1)
+        if '411' in s:
+            s = s.replace ('411', '13', 1)
+        if '1111' in s:
+            s = s.replace ('1111', '4', 1)
+    if sum(int(i) for i in s) == 36:
+        print(n)
+        break
+-----------------
