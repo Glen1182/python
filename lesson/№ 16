@@ -81,3 +81,26 @@ for n in range (1, 2500):
     f(n)
 print(f(2024)-4*f(2022))
 --------------------
+from functools import *
+@lru_cache(None)
+
+def g(n):
+    if n == 1:
+        return 1
+    else:
+        return f(n - 1) + 2 * g(n - 1)
+
+def f(n):
+    if n == 1:
+        return 1
+    else:
+         return 2 * f(n - 1) + g(n - 1) - 2
+
+result = f(100) + g(200)
+print(result)
+i = str(result)
+sum = 0
+for x in (str(result)):
+    sum = sum + int(x)
+print(sum)
+---------------------
